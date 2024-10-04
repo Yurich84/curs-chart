@@ -1,11 +1,7 @@
-<script setup>
-import HelloWorld from './components/Chart.vue'
-</script>
-
 <template>
-  <HelloWorld />
+    <ChartWrapper />
 </template>
 
-<style scoped>
-
-</style>
+<script setup>
+import ChartWrapper from '@/components/ChartWrapper.vue'
+</script>
