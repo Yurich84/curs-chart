@@ -10,6 +10,7 @@
         :key="chartComponentKey"
         :data="currentData"
     />
+    <IconLoader v-else-if="loading" />
 </template>
 
 <script setup>
@@ -17,6 +18,7 @@ import Chart from '@/components/Chart.vue'
 import { ref } from 'vue'
 import { BANK_MONO, BANK_PRIVAT } from '@/constants/constants.js'
 import { getCursData } from '@/services/api.js'
+import IconLoader from '@/components/IconLoader.vue'
 
 const chartComponentKey = ref(0)
 
